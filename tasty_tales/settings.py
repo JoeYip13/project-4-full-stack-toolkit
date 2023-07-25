@@ -31,6 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-joeyip13-project-4-full-8tbf0cys1r.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['tasty-tales-by-joe-yip-e31af4ace719.herokuapp.com']
 
 
 # Application definition
