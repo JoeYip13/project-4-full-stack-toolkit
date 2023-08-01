@@ -28,7 +28,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', False)
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['tasty-tales-by-joe-yip-e31af4ace719.herokuapp.com', '8000-joeyip13-project-4-full-8tbf0cys1r.us2.codeanyapp.com']
 
