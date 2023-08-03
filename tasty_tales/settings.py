@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
 
@@ -32,7 +33,8 @@ DEBUG = os.environ.get('DEBUG', False)
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['tasty-tales-by-joe-yip-e31af4ace719.herokuapp.com', '8000-joeyip13-project-4-full-8tbf0cys1r.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['tasty-tales-by-joe-yip-e31af4ace719.herokuapp.com',
+                 '8000-joeyip13-project-4-full-8tbf0cys1r.us2.codeanyapp.com']
 
 
 # Application definition
@@ -59,6 +61,14 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
