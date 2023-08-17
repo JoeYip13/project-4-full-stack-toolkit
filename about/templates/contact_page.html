@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<section class="bgimage">
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 my-3">
+            <h2>{{ contact.title }}</h2>
+            <p>{{ contact.content | safe }}</p>
+            <p class="fw-bold">Email: {{ contact.email }}</p>
+            <p class="fw-bold">Contact Number: {{ contact.contact_number }}</p>
+        </div>
+        <div class="col-lg-6 my-3">
+            <form method="post">
+                {{ form.as_p }}
+                {% csrf_token %}
+                <button type="submit" class="btn btn-send-msg btn-lg">
+                    Send Message
+                </button>
+                
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
