@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Add post</h2>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <a href="{% url 'home' %}" class="btn btn-cancel mb-2">Cancel</a>
+                <button class="btn btn-send-msg">Post</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

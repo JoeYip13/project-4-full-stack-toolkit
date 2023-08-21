@@ -48,6 +48,7 @@ body {
     height: 100vh;
 }
 
+/* Background image for contact page */
 .bgimage {
     width: 100%;
     height: 500px;
@@ -58,6 +59,28 @@ body {
     background-attachment: fixed;
 }
 
+/* Navbar */
+/* stroke effect*/
+.nav-link {
+    transition: all 0.2s;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #445261;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
 
 /* Font Awesome */
 .profile-link {
@@ -65,15 +88,20 @@ body {
     color: #000;
 }
 
+.fa-user:hover,
+.dropdown-toggle:hover {
+    color:#ef8e88;
+}
+
 /* Form */
 
-form input {
+/* form input {
     width: 100%;
 }
 
 textarea {
     width: 100%;
-}
+} */
 
 /* Cards */
 .card {
@@ -166,8 +194,19 @@ textarea {
     color: #fff;
 }
 
-.btn-send-msg {
+.btn {
     width: 100%;
+}
+
+.btn-cancel {
+    background-color: #f38f60;
+    color: #fff;
+}
+
+.btn-cancel:hover,
+.btn-cancel:active {
+    background-color: #fff;
+    color: #f38f60;
 }
 
 .btn-signup:hover,
