@@ -1,11 +1,13 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.views.generic import ListView, CreateView
 from django.http import HttpResponseRedirect
+from django.contrib.messages.views import SuccessMessageMixin
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
 
 
-class PostList(generic.ListView):
+class PostList(ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
@@ -77,3 +79,17 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class AddPostView(SuccessMessageMixin, CreateView):
+    """
+    Adding a new post view
+    """
+    model = Post
+    form_class = PostForm
+    template_name = 'add_post.html'
+    success_message = '%(title)s was created successfully - awaiting approval'
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
