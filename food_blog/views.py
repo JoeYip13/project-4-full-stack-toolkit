@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, CreateView, UpdateView
 from django.http import HttpResponseRedirect
 from django.contrib.messages.views import SuccessMessageMixin
 from .models import Post
@@ -89,6 +89,20 @@ class AddPostView(SuccessMessageMixin, CreateView):
     form_class = PostForm
     template_name = 'add_post.html'
     success_message = '%(title)s was created successfully - awaiting approval'
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+
+class UpdatePostView(SuccessMessageMixin, UpdateView):
+    """
+    Update post view
+    """
+    model = Post
+    form_class = PostForm
+    template_name = 'add_post.html'
+    success_message = '%(title)s was updated successfully'
 
     def form_valid(self, form):
         form.instance.author = self.request.user
