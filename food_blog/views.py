@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.urls import reverse_lazy
 from django.views import generic, View
-from django.views.generic import ListView, CreateView, UpdateView
+from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib import messages
 from .models import Post
 from .forms import CommentForm, PostForm
 
@@ -101,9 +103,23 @@ class UpdatePostView(SuccessMessageMixin, UpdateView):
     """
     model = Post
     form_class = PostForm
-    template_name = 'add_post.html'
+    template_name = 'update_post.html'
     success_message = '%(title)s was updated successfully'
 
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+
+
+class DeletePostView(DeleteView):
+    """
+    Delete a post view
+    """
+    model = Post
+    template_name = 'delete_post.html'
+    success_url = reverse_lazy('home')
+    success_message = 'Blog post was deleted successfully'
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(DeletePostView, self).delete(request, *args, **kwargs)
