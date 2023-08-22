@@ -33,10 +33,15 @@
                 <p class="card-text"></p>
                 {{ post.content | safe }}
                 <div class="row justify-content-md-center">
-                    {% if user.username == post.author.username %}
+                    {% if user.is_authenticated %}
+                    {% if user.id == post.author.id %}
                     <div class="col-md-4 my-2">
-                        <a href="{% url 'update_post' post.slug %}" class="btn btn-cancel">Update</a>
+                        <a href="{% url 'update_post' post.slug %}" class="btn btn-send-msg">Update</a>
                     </div>
+                    <div class="col-md-4 my-2">
+                        <a href="{% url 'delete_post' post.slug %}" class="btn btn-cancel">Delete</a>
+                    </div>
+                    {% endif %}
                     {% endif %}
                 </div>
                 <div class="row">

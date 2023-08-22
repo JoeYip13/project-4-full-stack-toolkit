@@ -22,7 +22,7 @@
                                 <img class="card-img-top"
                                     src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690872442/tasty_tales_food_blog/food-images/Free_Colorful_Doughnuts_Stock_Photo_djmkee.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src="{{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
