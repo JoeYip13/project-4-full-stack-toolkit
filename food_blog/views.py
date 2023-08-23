@@ -21,8 +21,10 @@ class PostDetail(View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(approved=True).order_by("-created_on")
+        comments = post.comments.all().order_by("-created_on")
+        comment_count = post.comments.filter(approved=True).count()
         liked = False
+
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
@@ -32,7 +34,7 @@ class PostDetail(View):
             {
                 "post": post,
                 "comments": comments,
-                "commented": False,
+                "comment_count": comment_count,
                 "liked": liked,
                 "comment_form": CommentForm()
             },
@@ -41,8 +43,10 @@ class PostDetail(View):
     def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
-        comments = post.comments.filter(approved=True).order_by("-created_on")
+        comments = post.comments.all().order_by("-created_on")
+        comment_count = post.comments.filter(approved=True).count()
         liked = False
+
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
@@ -54,6 +58,8 @@ class PostDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
+            messages.add_message(request, messages.SUCCESS,
+                                 'Comment awaiting approval')
         else:
             comment_form = CommentForm()
 
@@ -63,11 +69,53 @@ class PostDetail(View):
             {
                 "post": post,
                 "comments": comments,
-                "commented": True,
+                "commented_count": comment_count,
                 "liked": liked,
                 "comment_form": CommentForm()
             },
         )
+
+
+def comment_delete(request, slug, comment_id, *args, **kwargs):
+    """
+    view to delete comment
+    """
+    queryset = Post.objects.filter(status=1)
+    post = get_object_or_404(queryset, slug=slug)
+    comment = post.comments.filter(id=comment_id).first()
+
+    if comment.name == request.user.username:
+        comment.delete()
+        messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
+    else:
+        messages.add_message(request, messages.ERROR,
+                             'You can only delete your own comments!')
+
+    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+def comment_edit(request, slug, comment_id, *args, **kwargs):
+    """
+    view to edit comments
+    """
+    if request.method == "POST":
+
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=slug)
+        comment = post.comments.filter(id=comment_id).first()
+
+        comment_form = CommentForm(data=request.POST, instance=comment)
+        if comment_form.is_valid() and comment.name == request.user.username:
+            comment = comment_form.save(commit=False)
+            comment.post = post
+            comment.approved = False
+            comment.save()
+            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
+        else:
+            messages.add_message(request, messages.ERROR,
+                                 'Error updating comment!')
+
+    return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
 class PostLike(View):
