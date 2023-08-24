@@ -58,6 +58,32 @@ body {
     background-attachment: fixed;
 }
 
+/* Navbar */
+/* stroke effect*/
+.nav-link {
+    transition: all 0.2s;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #445261;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
 
 /* Font Awesome */
 .profile-link {
@@ -73,6 +99,16 @@ form input {
 
 textarea {
     width: 100%;
+}
+
+.fa-brands {
+    color: #F6F6F6;
+    transition: .2s;
+}
+
+.fa-brands:hover {
+    color: #ef8e88;
+    transform: scale(1.5);
 }
 
 /* Cards */
@@ -155,7 +191,7 @@ textarea {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #5c5c5c;
 }
 
 /* Buttons */
