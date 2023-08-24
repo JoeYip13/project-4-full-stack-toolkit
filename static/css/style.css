@@ -78,6 +78,10 @@ body {
     transition: all 0.2s;
 }
 
+.nav-link:hover {
+    font-weight: bold;
+}
+
 .nav-link:hover::after {
     opacity: 1;
 }
@@ -91,6 +95,16 @@ body {
 .fa-user:hover,
 .dropdown-toggle:hover {
     color:#ef8e88;
+}
+
+.fa-brands {
+    color: #F6F6F6;
+    transition: .2s;
+}
+
+.fa-brands:hover {
+    color: #ef8e88;
+    transform: scale(1.5);
 }
 
 /* Cards */
@@ -140,7 +154,7 @@ body {
 
 .post-subtitle {
     margin-left: 5%;
-    color: #bbbbbb;
+    color: #5c5c5c;
 }
 
 /* Buttons */
