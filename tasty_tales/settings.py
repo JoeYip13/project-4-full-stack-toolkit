@@ -76,6 +76,13 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+# Show summernote with Bootstrap4
+SUMMERNOTE_THEME = 'bs4'
+
+SUMMERNOTE_CONFIG = {
+    'width': '100%',
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',

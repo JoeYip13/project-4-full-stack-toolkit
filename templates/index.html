@@ -2,6 +2,13 @@
 
 {% block content %}
 {% include "featured_post.html" %}
+<div class="row">
+    <div class="col-md-3 mt-3">
+        {% if user.is_authenticated %}
+        <a href="{% url 'add_post' %}" class="btn btn-send-msg">Add Post</a>
+        {% endif %}
+    </div>
+</div>
     <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
@@ -15,7 +22,7 @@
                                 <img class="card-img-top"
                                     src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690872442/tasty_tales_food_blog/food-images/Free_Colorful_Doughnuts_Stock_Photo_djmkee.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src="{{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
