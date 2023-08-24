@@ -135,6 +135,9 @@
                     {% csrf_token %}
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
+                {% else %}
+                <h3 class="text-center mt-3">Sign up and become part of the community to leave a comment.</h3>
+                <a href="{% url 'account_signup' %}" class="btn btn-send-msg">Sign up!</a>
                 {% endif %}
             </div>
         </div>
