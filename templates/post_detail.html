@@ -2,27 +2,27 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-    <div class="container">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Post title goes in these h1 tags -->
+            <h1 class="post-title">{{ post.title }}</h1>
+            <!-- Post author goes before the | the post's created date goes after -->
+            <p class="post-subtitle">{{ post.author}} | {{ post.created_on }}</p>
+        </div>
         <div class="row">
-            <div class="col-md-6">
-                <!-- Post title goes in these h1 tags -->
-                <h1 class="post-title">{{ post.title }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle">{{ post.author}} | {{ post.created_on }}</p>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- The featured image URL goes in the src attribute -->
-                    {% if "placeholder" in post.featured_image.url %}
-                    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690872442/tasty_tales_food_blog/food-images/Free_Colorful_Doughnuts_Stock_Photo_djmkee.jpg"
-                        class="img-fluid" />
-                    {% else %}
-                    <img src="{{ post.featured_image.url }}" alt="Uploaded blog image" class="img-fluid"/>
-                    {% endif %}
-                </div>
+            <div class="col text-center">
+                <!-- The featured image URL goes in the src attribute -->
+                {% if "placeholder" in post.featured_image.url %}
+                <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693048811/Free_Colorful_Doughnuts_Stock_Photo_hij1hq.jpg"
+                    class="img-fluid detail-img"/>
+                {% else %}
+                <img src="{{ post.featured_image.url }}" alt="Uploaded blog image" class="img-fluid detail-img" />
+                {% endif %}
             </div>
         </div>
     </div>
+</div>
 
 <div class="container">
     <div class="row">
@@ -63,8 +63,8 @@
                             {% else %}
                             <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
-                        <!-- The number of likes goes before the closing strong tag -->
-                        <span class="text-secondary">{{ post.number_of_likes }} </span>
+                            <!-- The number of likes goes before the closing strong tag -->
+                            <span class="text-secondary">{{ post.number_of_likes }} </span>
                         </strong>
                     </div>
                     <div class="col-1">
@@ -79,7 +79,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <hr/>
+            <hr />
         </div>
     </div>
     <div class="row">
@@ -107,9 +107,9 @@
                 </div>
                 <div class="row justify-content-center">
                     {% if not comment.approved and comment.name == user.username %}
-                        <div class="col-12 text-center">
-                            <p class="approval">This comment is awaiting approval</p>
-                        </div>
+                    <div class="col-12 text-center">
+                        <p class="approval">This comment is awaiting approval</p>
+                    </div>
                     {% endif %}
                     <div class="col-lg-2 col-sm-3 mb-1">
                         {% if user.is_authenticated and comment.name == user.username %}

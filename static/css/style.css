@@ -138,12 +138,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #5c5c5c;
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #ef8e88;
 }
 
 .post-title {
@@ -157,12 +157,19 @@ body {
     color: #5c5c5c;
 }
 
+/* Post Detail  */
+/* Post Detail Image */
+.detail-img {
+    height: 60vh;
+    object-fit: cover;
+}
+
 /* Buttons */
 
 .btn-signup,
 .btn-send-msg {
     background-color: #ef8e88;
-    color: #fff;
+    color: #f6f6f6;
 }
 
 .btn {
@@ -195,19 +202,19 @@ body {
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #5c5c5c;
     text-decoration: underline;
 }
 
 .btn-like {
-    color: #E84610;
+    color: #ef8e88;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #ef8e88;
     background: transparent;
     border: none;
 }
