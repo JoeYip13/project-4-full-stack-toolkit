@@ -10,9 +10,9 @@
         </div>
         <div class="col-md-6 text-center">
             {% if "placeholder" in about.profile_image.url %}
-            <img src="{% static 'images/about-photo.jpg' %}" class="img-fluid">
+            <img src="{% static 'images/about-photo.jpg' %}" class="img-fluid rounded-3 mb-3">
             {% else %}
-            <img src="{{ about.profile_image.url }}" class="img-fluid">
+            <img src="{{ about.profile_image.url }}" class="img-fluid rounded-3 mb-2">
             {% endif %}
         </div>
         

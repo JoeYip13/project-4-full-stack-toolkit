@@ -14,42 +14,39 @@
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="card border border-1 rounded mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top"
-                                    src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690872442/tasty_tales_food_blog/food-images/Free_Colorful_Doughnuts_Stock_Photo_djmkee.jpg">
-                                {% else %}
-                                <img class="card-img-top" src="{{ post.featured_image.url }}">
-                                {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card border border-1 rounded mb-4">
+                            <div class="card-body">
+                                <div class="image-container">
+                                    {% if "placeholder" in post.featured_image.url %}
+                                    <img class="card-img-top"
+                                        src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693048811/Free_Colorful_Doughnuts_Stock_Photo_hij1hq.jpg"
+                                        alt="Feature image">
+                                    {% else %}
+                                    <img class="card-img-top" src="{{ post.featured_image.url }}" alt="Feature image">
+                                    {% endif %}
+                                    <div class="image-flash">
+                                        <p class="author">Author: {{ post.author }}</p>
+                                    </div>
+                                </div>
+                                <hr/>
+                                <p class="card-text text-muted h6">{{ post.created_on}} 
+                                    <i class="far fa-heart"></i> {{ post.number_of_likes }}
+                                </p>
+                                <div class="card-description">
+                                    <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                                        <h2 class="card-title">{{ post.title }}</h2>
+                                        <p class="card-text">{{ post.excerpt }}</p>
+                                    </a>
                                 </div>
                             </div>
-                            <hr/>
-                            <p class="card-text text-muted h6">{{ post.created_on}} 
-                                <i class="far fa-heart"></i> {{ post.number_of_likes }}
-                                <i class="far fa-comments"></i> {{ post.comment_count }}
-                            </p>
-                            <div class="card-description">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }}</p>
-                                <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                    Read more
-                                </a>
-                            </div>
-                            
                         </div>
                     </div>
-                </div>
                 {% if forloop.counter|divisibleby:4 %}
             </div>
             <div class="row">
                 {% endif %}
                 {% endfor %}
-
             </div>
         </div>
     </div>

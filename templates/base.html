@@ -1,7 +1,8 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
+
 <head>
     <title>Tasty Tales</title>
     <meta name="description" content="Tasty tales food blog website">
@@ -50,15 +51,17 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item ms-2 dropdown">
-                        <a class="profile-link dropdown-toggle" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false" href="">
+                        <a class="profile-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" href="">
                             {{ user.username }} <i class="fa-solid fa-user"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{% url 'add_post' %}">Add Food Post</a></li>
                             <li><a class="dropdown-item" href="#">Add Drinks Post</a></li>
                             <li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
                             <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
                         </ul>
                     </li>
@@ -82,12 +85,12 @@
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 {% if messages %}
-                    {% for message in messages %}
-                    <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
                     {{ message | safe }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                    {% endfor %}
+                </div>
+                {% endfor %}
                 {% endif %}
             </div>
         </div>
@@ -113,13 +116,13 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" aria-current="page" href="{% url 'contact' %}">Contact</a>
                 </ul>
-                
+
             </div>
         </nav>
         <p class="m-0 text-center text-white mb-2">
             Made by Joe Yip @ Code Institute
         </p>
-        <p class="m-0 text-center text-white">Follow us: 
+        <p class="m-0 text-center text-white">Follow us:
             <a href="https://www.facebook.com/" aria-label="Link to facebook" target="_blank">
                 <i class="fa-brands fa-facebook ms-3 fs-5"></i></a>
             <a href="https://twitter.com/" aria-label="Link to twitter" target="_blank">
@@ -140,4 +143,5 @@
     {% block extras %}
     {% endblock extras %}
 </body>
+
 </html>
