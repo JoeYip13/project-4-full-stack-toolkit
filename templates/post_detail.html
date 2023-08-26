@@ -88,9 +88,9 @@
             <div class="card-body">
                 <!-- We want a for loop inside the tags to iterate through each comment in comments -->
                 {% for comment in comments %}
-                <div class="comments{% if not comment.approved and comment.name == user.username %} faded{% elif not comment.approved %} d-none{% endif %}"
+                <div class="comments{% if not comment.approved and comment.name == user.username %} faded
+                {% elif not comment.approved %} d-none{% endif %} light-bg rounded-10"
                     style="padding: 10px;">
-                    <hr>
                     <p class="font-weight-bold">
                         <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
                         {{ comment.name }}
@@ -100,6 +100,7 @@
                         </span>
                         wrote:
                     </p>
+                    <hr>
                     <!-- The body of the comment goes before the | -->
                     <div id="comment{{ comment.id }}">
                         {{ comment.body | linebreaks }}

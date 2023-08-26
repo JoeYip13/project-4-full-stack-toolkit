@@ -13,6 +13,7 @@ body {
     color: #4A4A4F;
 }
 
+/* Background */
 .light-bg {
     background-color: #fff;
 }
@@ -219,6 +220,7 @@ body {
     border: none;
 }
 
+/* Comments */
 .faded {
     color: rgb(172, 175, 175);
 }
