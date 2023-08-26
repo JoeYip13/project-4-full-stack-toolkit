@@ -1,10 +1,10 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en" class="h-100">
-
+<html lang="en">
 <head>
     <title>Tasty Tales</title>
+    <meta name="description" content="Tasty tales food blog website">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,13 +23,11 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}"><span class="brand ms-4">Tasty Tales</span></a>
@@ -41,9 +39,6 @@
                 <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center fs-5">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{% url 'home' %}">Food</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'home' %}">Drinks</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{% url 'about' %}">About</a>
@@ -81,6 +76,7 @@
             </div>
         </div>
     </nav>
+
     <!-- Alert message -->
     <div class="container">
         <div class="row">
@@ -109,16 +105,13 @@
             <div class="container-fluid justify-content-center">
                 <ul class="navbar-nav mb-2 mb-lg-0 align-items-center fs-5">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'home' %}">Food</a>
+                        <a class="nav-link text-white" aria-current="page" href="{% url 'home' %}">Food</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'home' %}">Drinks</a>
+                        <a class="nav-link text-white" aria-current="page" href="{% url 'about' %}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'about' %}">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{% url 'contact' %}">Contact</a>
+                        <a class="nav-link text-white" aria-current="page" href="{% url 'contact' %}">Contact</a>
                 </ul>
                 
             </div>
@@ -127,10 +120,14 @@
             Made by Joe Yip @ Code Institute
         </p>
         <p class="m-0 text-center text-white">Follow us: 
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook ms-3 fs-5"></i></a>
-            <a href="https://twitter.com/"><i class="fa-brands fa-twitter ms-3 fs-5"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square ms-3 fs-5"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube-square ms-3 fs-5"></i></a>
+            <a href="https://www.facebook.com/" aria-label="Link to facebook" target="_blank">
+                <i class="fa-brands fa-facebook ms-3 fs-5"></i></a>
+            <a href="https://twitter.com/" aria-label="Link to twitter" target="_blank">
+                <i class="fa-brands fa-twitter ms-3 fs-5"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Link to instagram" target="_blank">
+                <i class="fa-brands fa-instagram-square ms-3 fs-5"></i></a>
+            <a href="https://www.youtube.com/" aria-label="Link to youtube" target="_blank">
+                <i class="fa-brands fa-youtube-square ms-3 fs-5"></i></a>
         </p>
     </footer>
     <script>
@@ -143,5 +140,4 @@
     {% block extras %}
     {% endblock extras %}
 </body>
-
 </html>
