@@ -57,8 +57,6 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{% url 'add_post' %}">Add Food Post</a></li>
-                            <li><a class="dropdown-item" href="#">Add Drinks Post</a></li>
-                            <li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -138,7 +136,7 @@
             let messages = document.getElementById('msg');
             let alert = new bootstrap.Alert(messages);
             alert.close();
-        }, 3500);
+        }, 5000);
     </script>
     {% block extras %}
     {% endblock extras %}

@@ -87,6 +87,10 @@ body {
     opacity: 1;
 }
 
+.dropdown-item:hover {
+    color: #ef8e88;
+}
+
 /* Font Awesome */
 .profile-link {
     text-decoration: none;
