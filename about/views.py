@@ -52,4 +52,3 @@ def contact_page_view(request, *args, **kwargs):
         'contact_page.html',
         context,
     )
-

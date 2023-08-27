@@ -37,7 +37,7 @@ class Post(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
-    # Redirect to home page after submitting post 
+    # Redirect to home page after submitting post
     def get_absolute_url(self):
         return reverse('home',)
 
