@@ -3,7 +3,7 @@
 Tasty Tales is a food blog website which engages users to create, read and share their passion for food. The website is aimed at users who enjoy sharing food. Users have the ability to create a free account on the website, where they can create blog post, update and delete. Users can also like and comment on user blog posts. 
 
 <figure align="center">
-    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693138779/Readme/Am-I-Responsive/am-i-responsive-tasty-tales_fp8fg5.jpg"
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693232802/Readme/Am-I-Responsive/am-i-responsive-tasty-tales_vuk0il.jpg"
         alt="Tasty tales website through Am i responsive screenshot">
         <figcaption>Tasty Tales Am I Responsive</figcaption>
 </figure>
@@ -34,7 +34,7 @@ Tasty Tales is a food blog website which engages users to create, read and share
     - [Login Page](#login-page)
     - [Blog Post Page](#blog-post-page)
     - [Add Post Page](#add-post-page)
-    </details></li>
+    </details>
 9. [Future Features](#future-features)
 10. [Technologies Used](#technologies-used)
 11. [Testing](#testing)
@@ -85,37 +85,37 @@ I used [Figma](https://www.figma.com/) to create wireframes. "X-boxes" indicate 
 <ul>
     <details>
         <summary>Desktop</summary>
-            <figure>
+            <figure align="center">
                 <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690610994/tasty_tales_food_blog/wireframes/figma-wireframe-desktop-lp_tgv1no.jpg"
                 alt="Desktop wireframe landing page">
                 <figcaption>Desktop wireframe landing page</figcaption>
             </figure>
-            <figure>
+            <figure align="center">
                 <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690610995/tasty_tales_food_blog/wireframes/figma-wireframe-desktop-fp_cmnfwo.jpg"
                 alt="Desktop wireframe food page">
                 <figcaption>Desktop wireframe food page</figcaption>
             </figure>
-            <figure>
+            <figure align="center">
                 <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690610994/tasty_tales_food_blog/wireframes/figma-wireframe-desktop-dp_bg04y9.jpg"
                 alt="Desktop wireframe drinks page">
                 <figcaption>Desktop wireframe drinks page</figcaption>
             </figure>
-            <figure>
+            <figure align="center">
                 <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690610994/tasty_tales_food_blog/wireframes/figma-wireframe-desktop-about_ug60o1.jpg"
                 alt="Desktop wireframe about page">
                 <figcaption>Desktop wireframe about page</figcaption>
             </figure>
-            <figure>
+            <figure align="center">
                 <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690610994/tasty_tales_food_blog/wireframes/figma-wireframe-desktop-contact_x982tv.jpg"
                 alt="Desktop wireframe contact page">
                 <figcaption>Desktop wireframe contact page</figcaption>
             </figure>
-            <figure>
+            <figure align="center">
                 <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690610994/tasty_tales_food_blog/wireframes/figma-wireframe-desktop-signup_ydc26n.jpg"
                 alt="Desktop wireframe signup page">
                 <figcaption>Desktop wireframe signup page</figcaption>
             </figure>
-            <figure>
+            <figure align="center">
                 <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1690610994/tasty_tales_food_blog/wireframes/figma-wireframe-desktop-login_anfhy2.jpg"
                 alt="Desktop wireframe login page">
                 <figcaption>Desktop wireframe login page</figcaption>
@@ -169,7 +169,7 @@ Dancing Script from Google Font was used for the logo. Hind Madurai was used thr
         alt="Google Fonts Pair">
     <figcaption>Google Fonts Pair</figcaption>
 </figure>
-
+</details>
 <details>
 <summary>Google Fonts Dancing Script</summary>
 <figure align="center">
@@ -177,7 +177,7 @@ Dancing Script from Google Font was used for the logo. Hind Madurai was used thr
         alt="Google Fonts dancing script">
     <figcaption>Google Fonts Dancing Script</figcaption>
 </figure>
-
+</details>
 <details>
 <summary>Google Fonts Hind Madurai</summary>
 <figure align="center">
@@ -185,7 +185,7 @@ Dancing Script from Google Font was used for the logo. Hind Madurai was used thr
         alt="Google Fonts Hind Madurai">
     <figcaption>Google Fonts Hind Madurai</figcaption>
 </figure>
-
+</details>
 <details>
 <summary>Google Fonts Lora</summary>
 <figure align="center">
@@ -193,7 +193,7 @@ Dancing Script from Google Font was used for the logo. Hind Madurai was used thr
         alt="Google Fonts Lora">
     <figcaption>Google Fonts Lora</figcaption>
 </figure>
-
+</details>
 <details>
 <summary>Google Fonts Montserrat</summary>
 <figure align="center">
@@ -219,7 +219,7 @@ For colours I kept it neutral with white, and dark grey with a contrast of a lig
     <figcaption>Color Space</figcaption>
 </figure>
 
---- 
+---
 ## Database Diagram
 Database diagram created using LucidCharts
 <figure align="center">
@@ -339,6 +339,8 @@ A blog post view features a post by a user. It displays the title of the post, a
 - [Heroku](https://www.heroku.com) is used to host this site.
 - [Github](https://www.github.com) was used to store the code.
 - [Cloudinary](https://cloudinary.com/) was used to store the images.
+- [WhiteNoise](https://whitenoise.readthedocs.io/en/stable/) was used to store static files.
+- [Django phone field](https://pypi.org/project/django-phone-field/) was used to add phone field.
 - [ElephantSQL](https://www.elephantsql.com/) was used to store the database.
 - [Pexels](https://www.pexels.com/) was used for imagery.
 - [Tinyjpg](https://tinyjpg.com/) was used to compress large image files.
@@ -359,8 +361,7 @@ The testing section can be found [here](TESTING.md).
 This project was created using [Codeanywhere](https://www.codeanywhere.com/).
 
 ### Initial Setup
-#### 1. Creating Respository on Github
-
+#### 1.Creating Respository on Github
 - 1.1 First make sure you are signed into [Github](https://github.com/) and go to code institutes template, which can be found [here](https://github.com/Code-Institute-Org/gitpod-full-template).
 - 1.2 Then click on **use this template** and select **Create a new repository** from the drop down. Enter the name for the repository and click **Create repository from template**.
 - 1.3 Once the repository was created, I clicked the purple **Codeanywhere** button to create a workspace in Codeanywhere so that I could write the code for the site.
@@ -517,6 +518,6 @@ Five Stages involved:<br>
 ## Other comments:
 My final thoughts on this project has been enjoyable. Throughout this project I learned the great powers of frameworks like Bootstrap and Django. Truly game-changers in the world of web development. They bring a host of benefits that streamline the development process, enhance efficiency and really empower developers to create visually stunning and responsive websites. Overall a great project!
 
-Joe Yip Student @ Code Institute. 
+Joe Yip Student @ Code Institute.
 
 [Back to the top](#tasty-tales)
