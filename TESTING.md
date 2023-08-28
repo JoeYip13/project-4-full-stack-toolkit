@@ -419,6 +419,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="testing hover effect on mouse over">
     <figcaption>Testing hover effect on mouse over</figcaption>
     </figure>
+    <br>
     <figure align="center">
     <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693133130/Readme/Main%20UX/footer-social-links_hnsfo2.jpg"
         alt="testing hover effect on mouse over">
@@ -681,7 +682,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
     </figure>
 </details>
 
-### Adding a Blog Post
+### Adding a new Blog Post
 | | PASS/FAIL |
 | ------- | ------ |
 | As a logged in user or admin I can add a new blog post | PASS |
@@ -732,6 +733,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="Adding a blog post testing">
     <figcaption>Add Blog post detail view</figcaption>
     </figure>
+</details>
 
 ### Updating a Blog Post
 | | PASS/FAIL |
@@ -803,3 +805,10 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
 
 ---
 ## Bugs
+### Fixed Bugs
+- Installing whitenoise. Static files was not loading on deployed site. In tasty_tales project, `settings.py` file Needed to move `cloudingry_storage` to below the `django.contrib.staticfiles`
+<figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693244698/Testing/bugs/whitenoise-error-fix_xqcbsm.jpg"
+        alt="WhiteNoise">
+    <figcaption>WhiteNoise error</figcaption>
+    </figure>
