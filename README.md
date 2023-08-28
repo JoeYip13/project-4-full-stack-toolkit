@@ -34,6 +34,7 @@ Tasty Tales is a food blog website which engages users to create, read and share
     - [Login Page](#login-page)
     - [Blog Post Page](#blog-post-page)
     - [Add Post Page](#add-post-page)
+    - [404 Page](#404-page)
     </details>
 9. [Future Features](#future-features)
 10. [Technologies Used](#technologies-used)
@@ -319,6 +320,13 @@ A blog post view features a post by a user. It displays the title of the post, a
 <figure align="center">
 <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693136579/Readme/Main%20UX/food-blog-post-detail-view2_k8evm4.jpg" alt="Tasty Tales blog post page">
 <figcaption>Food blog page</figcaption>
+<figure>
+
+### 404 Page
+A 404 page was created to handle user navigation errors and give user a link back to the home page.
+<figure align="center">
+<img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693251068/Readme/custom-error-pages/custom-404_hbau0g.png" alt="404 page">
+<figcaption>404 Page</figcaption>
 <figure>
 
 ---
