@@ -3,12 +3,18 @@
 {% block content %}
 
 <!--500 error page-->
-<div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-        <h3>500 - Internal Server Error
-            <strong>Ooops something went wrong.</strong>
-            Try to refresh this page or feel free to contact us if the problem persists.
-        </h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-2">
+            <h3>500 - Page not found</h3>
+            <p><strong>Ooops something went wrong.
+                    Try to refresh this page or feel free to contact us if the problem persists.</strong>
+            </p>
+            <br>
+            <p class="text-center">
+                <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">Tasty Tales</span></a>
+            </p>
+        </div>
     </div>
 </div>
 {%endblock%}
