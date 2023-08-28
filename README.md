@@ -201,6 +201,7 @@ Dancing Script from Google Font was used for the logo. Hind Madurai was used thr
         alt="Google Fonts Montserrat">
     <figcaption>Google Fonts Montserrat</figcaption>
 </figure>
+</details>
 
 ---
 

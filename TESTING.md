@@ -35,7 +35,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter asgi.py file">
         <figcaption>Tasty Tales asgi.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>settings.py - No errrors, except line too long</summary>
     <figure align="center">
@@ -43,7 +43,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter settings file">
         <figcaption>Tasty Tales settings.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>urls.py - No errors</summary>
     <figure align="center">
@@ -51,14 +51,15 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter urls.py file">
         <figcaption>Tasty Tales urls.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>wsgi.py - No errors</summary>
     <figure align="center">
     <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693166647/Testing/PEP8%20Python%20Linter/wsgi.py_kmkf5u.png"
         alt="python linter wsgi.py file ">
         <figcaption>Tasty Tales wsgi.py</figcaption>
-</figure>
+    </figure>
+</details>
 
 #### Food Blog App
 <details>
@@ -68,7 +69,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter admin.py file">
         <figcaption>Food Blog admin.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>apps.py - No errors</summary>
     <figure align="center">
@@ -76,7 +77,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter apps.py file">
         <figcaption>Food Blog apps.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>forms.py - No errors</summary>
     <figure align="center">
@@ -84,7 +85,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter forms.py file">
         <figcaption>Food Blog forms.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>models.py - No errors</summary>
     <figure align="center">
@@ -92,7 +93,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter models.py file">
         <figcaption>Food Blog models.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>urls.py - No errors</summary>
     <figure align="center">
@@ -100,7 +101,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter urls.py file">
         <figcaption>Food Blog urls.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>views.py - No errors</summary>
     <figure align="center">
@@ -108,6 +109,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter views.py file">
         <figcaption>Food Blog views.py</figcaption>
 </figure>
+</details>
 
 #### About App
 
@@ -118,7 +120,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter admin.py file">
         <figcaption>About admin.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>apps.py - No errors</summary>
     <figure align="center">
@@ -126,7 +128,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter apps.py">
         <figcaption>About apps.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>forms.py - No errors</summary>
     <figure align="center">
@@ -134,7 +136,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter forms.py file ">
         <figcaption>About forms.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>models.py - No errors</summary>
     <figure align="center">
@@ -142,7 +144,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter models.py file">
         <figcaption>About models.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>urls.py - No errors</summary>
     <figure align="center">
@@ -150,7 +152,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter urls.py file">
         <figcaption>About urls.py</figcaption>
 </figure>
-
+</details>
 <details>
     <summary>views.py - No errors</summary>
     <figure align="center">
@@ -158,6 +160,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="python linter views.py file">
         <figcaption>About views.py</figcaption>
 </figure>
+</details>
 
 ---
 ## Responsive
@@ -194,6 +197,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
         alt="Tasty tales mobile view">
         <figcaption>Mobile view</figcaption>
 </figure>
+</details>
 
 <details>
     <summary>Tablet view</summary>
