@@ -132,11 +132,11 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #bbbbbb;
+    background-color: #93b540;
 }
 
 .author {
-    color: white;
+    color: black;
     margin: 4px;
     text-transform: uppercase;
 }
