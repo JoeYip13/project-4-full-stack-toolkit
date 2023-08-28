@@ -1,7 +1,7 @@
 # Testing
 
 <figure align="center">
-    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693138779/Readme/Am-I-Responsive/am-i-responsive-tasty-tales_fp8fg5.jpg"
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693232802/Readme/Am-I-Responsive/am-i-responsive-tasty-tales_vuk0il.jpg"
         alt="Tasty tales website through Am i responsive screenshot">
         <figcaption>Tasty Tales Am I Responsive</figcaption>
 </figure>
@@ -14,15 +14,43 @@
 3. [PEP8 Validator](#pep8-validator)
 4. [Responsive Design](#responsive)
 5. [Lighthouse Testing](#lighthouse-testing)
-6. [Manual Testing](#manual-testing)
-7. [Bugs](#bugs)
+6. [PageSpeed Insights](#pagespeed-insights)
+6. <details open><summary><a href="#manual-testing">Manual Testing</a></summary>
 
+    - [Navigation Bar](#navigation-bar)
+    - [Footer](#footer)
+    - [Home Page](#home-page)
+    - [Blog Post Detail view](#blog-post-detail-view)
+    - [About Page](#about-page)
+    - [Contact Page](#contact-page)
+    - [Sign Up Page](#sign-up-page)
+    - [Login Page](#login-page)
+    - [Administration](#administration)
+    - [More Manual Scenario Base Testing](#more-manual-scenario-base-testing)
+   </details>
+7. [Bugs](#bugs)
 
 ---
 
 ## Automated Testing
 ---
 ## W3C Validator
+<details>
+<summary>W3C Validator</summary>
+<figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231384/Testing/W3C%20Validation/w3c-validation_qwyqak.png"
+        alt="W3C validator">
+        <figcaption>W3C Validator</figcaption>
+</figure>
+</details>
+<details>
+<summary>W3C CSS Validator</summary>
+<figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231384/Testing/W3C%20Validation/w3c-css-validation_czyeju.png">
+        <figcaption>W3C CSS Validator</figcaption>
+</figure>
+</details>
+
 ---
 ## PEP8 Validator
 Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate all python files.
@@ -164,6 +192,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
 
 ---
 ## Responsive
+
 <details>
 <summary>Mobile view</summary>
 <figure align="">
@@ -258,7 +287,92 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
 </details>
 
 ---
+## PageSpeed Insights
+<details>
+    <summary>Home Page</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231678/Testing/Pagespeed/homepage_m2pfs5.png"
+        alt="Home page pagespeed insights">
+    <figcaption>Home page pagespeed insights</figcaption>
+    </figure>
+</details>
+<details>
+    <summary>About Page</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231678/Testing/Pagespeed/about-page_y3a90x.png" 
+        alt="About page pagespeed insights">
+    <figcaption>About page pagespeed insights </figcaption>
+    </figure>
+</details>
+<details>
+    <summary>Contact Page</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231678/Testing/Pagespeed/contact-page_czmauf.png" 
+        alt="Contact page pagespeed insights">
+    <figcaption>Contact page pagespeed insights</figcaption>
+    </figure>
+</details>
+<details>
+    <summary>Sign Up Page</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231679/Testing/Pagespeed/signup-page_vhlz1z.png"
+        alt="Sign up page pagespeed insights">
+    <figcaption>Sign up page pagespeed insights</figcaption>
+    </figure>
+</details>
+<details>
+    <summary>Login Page</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231679/Testing/Pagespeed/login-page_t5zrqg.png"
+        alt="Login page pagespeed insights">
+    <figcaption>Login page pagespeed insights</figcaption>
+    </figure>
+</details>
+<details>
+    <summary>Blog Post Detail View Page</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231678/Testing/Pagespeed/blog-post-page_axdmek.png"
+        alt="Blog post detail view page">
+    <figcaption>Blog post detail view page</figcaption>
+    </figure>
+</details>
+
+---
+
 ## Lighthouse Testing
+<details>
+    <summary>Add Post Page</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231674/Testing/Lighthouse/add-post-page_bxgbcl.png"
+        alt="Add post page lighthouse">
+    <figcaption>Add post page lighthouse</figcaption>
+    </figure>
+</details>
+<details>
+    <summary>Update Post Page</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231674/Testing/Lighthouse/update-post-page_ynytyq.png"
+        alt="Update post page lighthouse">
+    <figcaption>Update post page lighthouse</figcaption>
+    </figure>
+</details>
+<details>
+    <summary>Delete Post Page</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231673/Testing/Lighthouse/delete-post-page_dflnul.png"
+        alt="Delete page lighthouse">
+    <figcaption>Delete post page lighthouse</figcaption>
+    </figure>
+</details>
+<details>
+    <summary>Log out Page</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693231673/Testing/Lighthouse/sign-out-page_nf04pi.png"
+        alt="Log out page lighthouse">
+    <figcaption>Log out page lighthouse</figcaption>
+    </figure>
+</details>
+
 ---
 ## Manual Testing
 ### Navigation Bar
@@ -266,6 +380,7 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
 | ------- | ------ | --------------- | --------- |
 | Website Logo | Display | Website logo is displayed when on homepage | PASS |
 | Navbar | Display | When user is not logged in only links to Food, About, Contact, Sign up, Login should be displayed | PASS |
+| Navbar | Hover | On mouse hover can see the hover effect of a underline over the links | PASS |
 | Navbar | Display | When user is logged in only links to Food, About, Contact, User's display name with a Profile Icon and a dropdown arrow menu. | PASS |
 | Profile dropdown | Click | When a user is logged in and clicks on the profile icon or dropdown arrow menu. It should display a Add Post link and Logout link | PASS |
 | Profile dropdown | Click | When a user is logged in and clicks on the Add post link it should open Add post page | PASS |
@@ -277,16 +392,39 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
 | Navbar | Click | "Login" should open log in page | PASS |
 | Website Logo | Click | Website logo link should open home page | PASS |
 
+<details><summary>Navbar Testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693236060/Testing/Navigation%20testing/navbar-food_djskzj.png"
+        alt="testing hover effect on mouse over">
+    <figcaption>Testing hover effect on mouse over</figcaption>
+    </figure>
+</details>
+
 ### Footer
 | Feature | Action | Expected Result | PASS/FAIL |
 | ------- | ------ | --------------- | --------- |
 | Footer | Display | Should only be visible at the bottom of the webpage | PASS |
 | Footer Navbar | Display | Should display a secondary navbar with only links to Food, About, Contact | PASS |
 | Footer Social Media | Display | Should display social media links in the footer section | PASS |
+| Navbar | Hover | On mouse hover can see the hover effect of a underline over the links | PASS |
+| Footer Social Media | Hover | On mouse hover can see the hover effect of the social media icons | PASS |
 | Footer Navbar | Click | "Food" link should open to home page | PASS |
 | Footer Navbar | Click | "About" link should open About page | PASS |
 | Footer Navbar | Click | "Contact" link should open Contact page | PASS |
 | Footer Navbar | Click | Social media links should open a blank page to each their social media pages | PASS |
+
+<details><summary>Footer Testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693133130/Readme/Main%20UX/footer-nav-links_nuujki.jpg"
+        alt="testing hover effect on mouse over">
+    <figcaption>Testing hover effect on mouse over</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693133130/Readme/Main%20UX/footer-social-links_hnsfo2.jpg"
+        alt="testing hover effect on mouse over">
+    <figcaption>Testing hover effect on mouse over</figcaption>
+    </figure>
+</details>
 
 ### Home Page
 | Feature | Action | Expected Result | PASS/FAIL |
@@ -301,6 +439,14 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
 | Add Post Link | Click | Should open a Add Post page | PASS |
 | Blog Posts | Click | When a user clicks on a blog post title or excerpt, it should open that blog post in a detail view | PASS |
 
+<details><summary>Home Page Testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693238364/Readme/Main%20UX/hover-effect-over-blog-post_kjyy2w.png"
+        alt="testing hover effect on mouse over">
+    <figcaption>Testing hover effect on mouse over</figcaption>
+    </figure>
+</details>
+
 ### Blog Post Detail View
 | Feature | Action | Expected Result | PASS/FAIL |
 | ------- | ------ | --------------- | --------- |
@@ -313,6 +459,23 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
 | Comment | Input | A user logged in can input data in the text field | PASS |
 | Comment | Click | A user logged in can submit data passed in the text field | PASS |
 | Comment | Click | When a user logged in has not input any data in the text field, a error message should appear | PASS |
+
+<details><summary>Blog Post Testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693136186/Readme/Main%20UX/food-blog-post-detail-view_ebi6yh.jpg"
+        alt="display blog post testing">
+    <figcaption>Display Blog Post</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693238949/Testing/blog%20post%20testing/comment-section-new-user_oa3fr4.png"
+        alt="comment section as new user">
+    <figcaption>Comment view as new user</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693238947/Testing/blog%20post%20testing/comment-section-logged-in_gjrzcg.png">
+    <figcaption>Comment view as a logged in user</figcaption>
+    </figure>
+</details>
 
 ### About Page
 | Feature | Action | Expected Result | PASS/FAIL |
@@ -330,6 +493,23 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
 | Contact Form | Click | When a user has inputted all data fields, they can submit their data by clicking the send message button | PASS |
 | Contact Form | Click | When a user has not input any data in the required fields, a error message should appear | PASS |
 
+<details><summary>Contact Testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693239286/Testing/Contact%20form%20testing/contact-form-test_e9duqo.jpg">
+    <figcaption>Contact form testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693239286/Testing/Contact%20form%20testing/contact-form-test-no-input-feedback_clizjb.jpg"
+        alt="contact form error message">
+    <figcaption>Contact form error message</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693239286/Testing/Contact%20form%20testing/contact-form-test-success-feedback_czlenf.jpg"
+        alt="contact form sent success alert">
+    <figcaption>Contact form sent success alert</figcaption>
+    </figure>
+</details>
+
 ### Sign Up Page
 | Feature | Action | Expected Result | PASS/FAIL |
 | ------- | ------ | --------------- | --------- |
@@ -339,6 +519,29 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
 | Sign Up Form | Input | A user can input their data in the name, email, password and password again area | PASS |
 | Sign Up Form | Click | When a user has inputted all data fields, they can submit their data by clicking the Sign Up button | PASS |
 | Sign Up Form | Click | When a user has not input any data in the required fields, a error message should appear | PASS |
+
+<details><summary>Sign Up Testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693235222/Testing/New%20user%20testing/sign-up-new-user-test_lyv1tk.jpg"
+        alt="Sign up new user testing">
+    <figcaption>Sign up new user testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693235222/Testing/New%20user%20testing/sign-up-all-auth_acxgw0.jpg"
+        alt="Sign up new user already exists testing">
+    <figcaption>If user already exists testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693235222/Testing/New%20user%20testing/sign-up-success-feedback_zh0d4w.jpg"
+        alt="New user success alert">
+    <figcaption>New user success alert</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693235222/Testing/New%20user%20testing/test-user-logout_olg8vb.jpg"
+        alt="Shows user name in nav bar">
+    <figcaption>Shows user name in the nav bar</figcaption>
+    </figure>
+</details>
 
 ### Login Page
 | Feature | Action | Expected Result | PASS/FAIL |
@@ -350,6 +553,253 @@ Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) was used to val
 | Login Form | Click | When a user has inputted all data fields, they can submit their data by clicking the Sign Up button | PASS |
 | Login Form | Click | When a user has not input any data in the required fields, a error message should appear | PASS |
 | Login Form | Click | When a user has not input any data in the required fields, a error message should appear | PASS |
+
+<details><summary>Login Testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693237338/Testing/Login%20testing/login-testing_qycrtd.png"
+        alt="sign in">
+    <figcaption>Sign In</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693237338/Testing/Login%20testing/login-testing-success_kakawe.png"
+        alt="sign in success">
+    <figcaption>Sign in success alert</figcaption>
+    </figure>
+</details>
+
+### Administration
+| Feature | Action | Expected Result | PASS/FAIL |
+| ------- | ------ | --------------- | --------- |
+| Admin | Display | As a site admin the admim page is displayed when url is passed through into the browser | PASS |
+| Admin About | Display | As a site admin the admim about displays all the information in the website for the about page, About, Contact messages and Contact  | PASS |
+| Admin Users | Display | As a site admin I can see the Users signed up on the website | PASS |
+| Admin Food Blog | Display | As a site admin I can see the Food Blog posted on the website. Comments and Posts | PASS |
+| Admin About | Click | As a admin clicking the About brings me the About information for the website  | PASS |
+| Admin About | Click | As a admin I can choose a new file to upload to display in the about page | PASS |
+| Admin About | Input | As a admin I can input a new title for the about page and change the content. | PASS |
+| Admin About | Click | As a admin I can save new data in the about section. | PASS |
+| Admin Contact Messages | Display | As a admin I can see a list of users who have submitted a contact form on the website | PASS |
+| Admin Contact Messages | Display | As a admin I can see the users contact information to return a message back to the user | PASS |
+| Admin Contact | Click | As a admin clicking the Contact brings me the Contact information for the website | PASS |
+| Admin Contact | Input | As a admin I can input a new title for the contact page and change the content | PASS |
+| Admin Contact | Input | As a admin I can input a new email and contact number for the contact page. | PASS |
+| Admin Contact | Click | As a admin I can save new data in the contact section. | PASS |
+<details><summary>Administration Testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693239858/Testing/Admin/admin-view_pxlwjg.png"
+        alt="admin view">
+    <figcaption>Admin view</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693239858/Testing/Admin/admin-about_e5e70k.png"
+        alt="Admin about view">
+    <figcaption>Admin Contact</figcaption>
+    </figure><figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693239858/Testing/Admin/admin-contacts_jhkvww.png"
+        alt="admin contact view">
+    <figcaption>Admin Contact</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693239858/Testing/Admin/admin-users_dgasji.png"
+        alt="admin users view">
+    <figcaption>Admin Users</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693239858/Testing/Admin/admin-food-blog-comments_xecvgx.png"
+        alt="admin comments view">
+    <figcaption>Admin Comments</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693239858/Testing/Admin/admin-food-blog-posts_kmzupd.png"
+        alt="admin posts view">
+    <figcaption>Admin Posts</figcaption>
+    </figure>
+</details>
+
+---
+## More Manual Scenario Base Testing
+### Posting a Comment
+| | PASS/FAIL |
+| ------- | ------ |
+| As a user or admin I can post a comment on a blog post | PASS |
+| As a user or admin I can see my comment on a blog post | PASS |
+| As a user or admin I can edit my comment on a blog post | PASS |
+| As a user or admin I can delete my comment on a blog post | PASS |
+| As a admin I can approve any comments on a blog post | PASS |
+| As a admin I can un-approve any comments on a blog post | PASS |
+| As a admin I can delete any comments on a blog post | PASS |
+<details><summary>Posting a comment testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693240767/Testing/Comment%20testing/post-comment-test_vxeaf3.jpg"
+        alt="comment testing">
+    <figcaption>Comment testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693240767/Testing/Comment%20testing/comment-post-success-feedback_yopya2.jpg"
+        alt="comment testing">
+    <figcaption>Comment success testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693240767/Testing/Comment%20testing/post-comment-test-awaiting-approval_g1jcks.jpg"
+        alt="comment testing">
+    <figcaption>Comment awaiting approval testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693240767/Testing/Comment%20testing/comment-edit_uguwav.jpg"
+        alt="comment testing">
+    <figcaption>Comment edit testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693240767/Testing/Comment%20testing/comment-edit-update-success_bhx9hr.jpg"
+        alt="comment testing">
+    <figcaption>Comment edit success testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693240767/Testing/Comment%20testing/delete-comment_vkhfn4.jpg"
+        alt="comment testing">
+    <figcaption>Comment delete testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693240768/Testing/Comment%20testing/comment-delete-feedback_qsvqey.jpg"
+        alt="comment testing">
+    <figcaption>Comment delete success testing</figcaption>
+    </figure> 
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693240767/Testing/Comment%20testing/comment-delete-view_nmxs8y.jpg"
+        alt="comment testing">
+    <figcaption>Comment deleted comment view</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693240767/Testing/Comment%20testing/comment-admin-view_zebkt9.jpg"
+        alt="comment testing">
+    <figcaption>Comment approve by Admin testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693240768/Testing/Comment%20testing/comment-admin-approve_hy9aj6.jpg"
+        alt="comment testing">
+    <figcaption>Comment approved by Admin testing</figcaption>
+    </figure>
+</details>
+
+### Adding a Blog Post
+| | PASS/FAIL |
+| ------- | ------ |
+| As a logged in user or admin I can add a new blog post | PASS |
+| As a logged in user or admin I can see my approved blog post | PASS |
+| As a logged in user or admin I can edit my blog post | PASS |
+| As a logged in user or admin I can delete my blog post | PASS |
+| As a admin I can approve any blog post | PASS |
+| As a admin I can un-approve any blog post | PASS |
+| As a admin I can delete any blog post | PASS |
+<details><summary>Adding a new Blog Post testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241728/Testing/Add%20post%20testing/add-post_pvso4j.jpg"
+        alt="Adding a blog post testing">
+    <figcaption>Add Blog post testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241728/Testing/Add%20post%20testing/test-post_za9m22.jpg"
+        alt="Adding a blog post testing">
+    <figcaption>Add Blog post testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241728/Testing/Add%20post%20testing/test-post-success-feedback_jjccsh.jpg"
+        alt="Adding a blog post testing">
+    <figcaption>Add Blog post testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241728/Testing/Add%20post%20testing/test-post-admin-panel_syonem.jpg"
+        alt="Adding a blog post testing">
+    <figcaption>Add Blog post Admin authorization view testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241728/Testing/Add%20post%20testing/test-post-admin-panel-authorization_d591w7.jpg"
+        alt="Adding a blog post testing">
+    <figcaption>Add Blog post Admin authorization draft to published testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241728/Testing/Add%20post%20testing/test-post-admin-published_xb5rkj.jpg"
+        alt="Adding a blog post testing">
+    <figcaption>Add Blog admin authorized published</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241728/Testing/Add%20post%20testing/test-post-success_oiocoq.jpg"
+        alt="Adding a blog post testing">
+    <figcaption>Blog Post Admin Authorized</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241728/Testing/Add%20post%20testing/test-post-detail-view_lxhsqu.jpg"
+        alt="Adding a blog post testing">
+    <figcaption>Add Blog post detail view</figcaption>
+    </figure>
+
+### Updating a Blog Post
+| | PASS/FAIL |
+| ------- | ------ |
+| As a logged in user or admin I can update my blog post | PASS |
+| As a logged in user or admin I can see my updated blog post | PASS |
+| As a logged in user or admin I can delete my blog post | PASS |
+<details><summary>Updating a Blog Post testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241748/Testing/Update%20post%20testing/test-post-update-post-view_mogqvo.jpg"
+        alt="Updating a blog post testing">
+    <figcaption>Updating a Blog post testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241748/Testing/Update%20post%20testing/test-post-input_ftxxzj.jpg"
+        alt="Updating a blog post testing">
+    <figcaption>Updating a Blog post with new input testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241748/Testing/Update%20post%20testing/test-post-update-success_vlsjgh.jpg"
+        alt="Updating a blog post testing">
+    <figcaption>Updating a Blog post success alert testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241749/Testing/Update%20post%20testing/test-post-admin-panel-update-success_rol6uy.jpg"
+        alt="Updating a blog post testing">
+    <figcaption>Updating a Blog admin view</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241748/Testing/Update%20post%20testing/test-post-update-post-view-success_innvri.jpg"
+        alt="Updating a blog post testing">
+    <figcaption>Updatied blog post detail view</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241749/Testing/Update%20post%20testing/test-post-update-success-landing-page_i5xcay.jpg"
+        alt="Updating a blog post testing">
+    <figcaption>Updated Blog post testing</figcaption>
+    </figure>
+</details>
+
+### Deleting a Blog Post
+| | PASS/FAIL |
+| ------- | ------ |
+| As a logged in user or admin I can delete my blog post | PASS |
+| As a logged in user or admin I can no longer see my deleted blog post anywhere on the website | PASS |
+| As a user or admin my deleted blog post should be removed from the database | PASS |
+<details><summary>Deleting a Blog Post testing</summary>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241735/Testing/Delete%20post%20testing/test-post-delete_wujvqk.jpg"
+        alt="Deleting a blog post testing">
+    <figcaption>Deleting a Blog post testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241735/Testing/Delete%20post%20testing/test-post-delete-confirmation_fxw0tk.jpg"
+        alt="Deleting a blog post testing">
+    <figcaption>Deleting a Blog post confirm delete testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241735/Testing/Delete%20post%20testing/test-post-delete-success-feedback_qcyh4s.jpg"
+        alt="Deleting a blog post testing">
+    <figcaption>Deleting a Blog post testing</figcaption>
+    </figure>
+    <figure align="center">
+    <img src="https://res.cloudinary.com/dcjkzptkn/image/upload/v1693241735/Testing/Delete%20post%20testing/test-post-delete-admin-panel_xvxynk.jpg"
+        alt="Deleting a blog post testing">
+    <figcaption>Deleted Blog post admin view testing</figcaption>
+    </figure>
+</details>
 
 ---
 ## Bugs
