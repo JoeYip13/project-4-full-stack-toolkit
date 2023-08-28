@@ -114,6 +114,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tasty_tales.wsgi.application'
 
+# Handlers for custom error pages
+handler404 = 'food_blog.views.custom_page_not_found'
+handler403 = 'food_blog.views.custom_permission_denied'
+handler400 = 'food_blog.views.custom_bad_request'
+handler500 = 'food_blog.views.custom_server_error'
+
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases

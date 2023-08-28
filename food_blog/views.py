@@ -171,3 +171,7 @@ class DeletePostView(DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeletePostView, self).delete(request, *args, **kwargs)
+
+
+def custom_page_not_found(request, exception):
+    return render(request, '404.html', status=404)
