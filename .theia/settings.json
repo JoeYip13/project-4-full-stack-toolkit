@@ -1,0 +1,7 @@
+{
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "markdown.extension.tableFormatter.enabled": true,
+    "markdown.extension.toc.updateOnSave": false
+}
