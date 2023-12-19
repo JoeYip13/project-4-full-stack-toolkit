@@ -9,7 +9,7 @@ Tasty Tales is a food blog website which engages users to create, read and share
 </figure>
 
 
-[Click Here To Visit Live Site](https://tasty-tales-by-joe-yip-e31af4ace719.herokuapp.com/)  
+[Click Here To Visit Live Site](https://tasty-tales-food-blog-4b00c4ab7c1d.herokuapp.com/)  
 
 ## Table Of Contents:
 
