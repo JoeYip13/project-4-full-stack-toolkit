@@ -33,8 +33,8 @@ DEBUG = os.environ.get('DEBUG', False)
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['tasty-tales-by-joe-yip-e31af4ace719.herokuapp.com',
-                 '8000-joeyip13-project-4-full-8tbf0cys1r.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['tasty-tales-food-blog-4b00c4ab7c1d.herokuapp.com',
+                 '8000-joeyip13-project-4-full-pjvz25c7hg.us2.codeanyapp.com']
 
 
 # Application definition
